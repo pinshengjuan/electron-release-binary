@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+    <!-- <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'></link> -->
+    <script defer src="../fontawesome/js/all.js"></script>
+    <!--load all styles -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Release Binary</title>
+  </head>
+  <body>
+    <div class="parent">
+
+        <!-- Project Path -->
+        <br />
+        <div class="frame-class">
+          <div class="icon-position">
+            <i class="fa fa-file-invoice fa-lg"></i>
+          </div>
+          <label class="label-class">History</label>
+          <code class="path-class" id="history-path"></code>
+          <div class="switch-n-button-position">
+            <button
+              class="txt-file-name-class"
+              id="txt-file-name"
+              name="fileList"
+            >
+              <!-- <i class="fa fa-folder-open fa-lg"></i> -->
+              <i class="fa fa-ellipsis-h fa-2x"></i>
+            </button>
+          </div>
+          <br /><br />
+        </div>
+
+        <!-- ROM Path -->
+        <br />
+        <div class="frame-class">
+          <div class="icon-position">
+            <i class="fa fa-database fa-lg"></i>
+          </div>
+          <label class="label-class">ROM Server</label>
+          <code class="path-class" id="rom-path"></code>
+          <div class="switch-n-button-position">
+            <button
+              class="rom-folder-name-class"
+              id="rom-folder-name"
+              name="romFolderName"
+            >
+              <!-- <i class="fa fa-folder-open fa-lg"></i> -->
+              <i class="fa fa-ellipsis-h fa-2x"></i>
+            </button>
+          </div>
+          <br /><br />
+        </div>
+
+        <!-- Email -->
+        <br />
+        <div class="frame-class">
+          <div class="icon-position">
+            <i class="fa fa-paper-plane fa-lg"></i>
+          </div>
+          <label class="label-class">Generate Email
+          </label>
+            <div class="switch-n-button-position">
+              <label class="switch">
+                <input type="checkbox" id="isEmail" checked>
+                <span class="slider round email"></span>
+              </label>
+            </div>
+          </div>
+
+        <!-- Copy to Clipboard -->
+        <br />
+        <div class="frame-class">
+          <div class="icon-position">
+            <i class="fa fa-clipboard fa-lg"></i>
+          </div>
+          <label class="label-class">Copy History Content to Clipboard
+          </label>
+            <div class="switch-n-button-position">
+              <label class="switch">
+                <input type="checkbox" id="isClipboard">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+        <!-- Close -->
+        <br />
+        <div class="frame-class">
+          <div class="icon-position">
+            <i class="fa fa-power-off fa-lg"></i>
+          </div>
+          <label class="label-class">Close When Finished
+          </label>
+            <div class="switch-n-button-position">
+              <label class="switch">
+                <input type="checkbox" id="isClose" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+
+        <!-- Release Btn -->
+        <br />
+        <button type="submit" id="release-button-id" class="release-btn-class">
+            <!-- <i class="fa fa-folder-open fa-lg"></i> -->
+            <i class="fa fa-upload fa-lg" id="release-load-icon-id"></i>
+            <!-- <i class="fa fa-circle-notch fa-spin" id="release-load-icon-id"></i> -->
+            <p>&ensp;</p>
+            <p id="release-status-id">Release</p>
+        </button>
+    </div>
+  </div>
+  </body>
+
+  <script type="module" src="./renderer.js"></script>
+</html>

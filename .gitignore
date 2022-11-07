@@ -1,0 +1,6 @@
+node_modules
+out
+build
+dist
+main_py.spec
+src/python/__pycache__
