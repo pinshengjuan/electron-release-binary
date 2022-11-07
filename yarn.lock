@@ -27,6 +27,17 @@
     ajv "^6.12.0"
     ajv-keywords "^3.4.1"
 
+"@electron-forge/async-ora@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@electron-forge/async-ora/-/async-ora-6.0.0.tgz#5ca7b9369f07b383b874b76f48062ac9497e0b15"
+  integrity sha512-qRbdJRvpxpmSzoNh0YzsYFR7cKsgMwI4hRbaL8qstYHs4bvEzvtmrLLEUpfGM6rh0a3AAZDC67PbOBT0dhGLLw==
+  dependencies:
+    chalk "^4.0.0"
+    debug "^4.3.1"
+    log-symbols "^4.0.0"
+    ora "^5.0.0"
+    pretty-ms "^7.0.0"
+
 "@electron-forge/async-ora@6.0.0-beta.69":
   version "6.0.0-beta.69"
   resolved "https://registry.yarnpkg.com/@electron-forge/async-ora/-/async-ora-6.0.0-beta.69.tgz#d2374bda1bf38815b4cbe0114d852ff88047abba"
@@ -102,6 +113,15 @@
     username "^5.1.0"
     yarn-or-npm "^3.0.1"
 
+"@electron-forge/maker-base@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.0.tgz#9436e459984ec5e0e37f49e3eec2d8efbcadd718"
+  integrity sha512-zT4NQzJ4zjlKwmRtY/HeKcd/eP+R2vtYvpen5z6vuqY12+jubGgRoGyot4VT0nN5p46gcofGW/Y6aPEuND4ORg==
+  dependencies:
+    "@electron-forge/shared-types" "6.0.0"
+    fs-extra "^10.0.0"
+    which "^2.0.2"
+
 "@electron-forge/maker-base@6.0.0-beta.69":
   version "6.0.0-beta.69"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.0-beta.69.tgz#96a50041d3feb20bbd29569528572669e1a9429f"
@@ -120,13 +140,13 @@
     fs-extra "^10.0.0"
     which "^2.0.2"
 
-"@electron-forge/maker-deb@^6.0.0-beta.69":
-  version "6.0.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-deb/-/maker-deb-6.0.0-beta.69.tgz#d15feefdda842db80892205d41a5d4cd7bb81896"
-  integrity sha512-MIKuXyYJL5g0JiRHfJs9Av3nPHZe300/9Vv7IU/7l8XJDnqsbiPV2IE3bXIrImSyFRijjaogFEVK/sQVrFcoMQ==
+"@electron-forge/maker-deb@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-deb/-/maker-deb-6.0.0.tgz#eda2265bc90c37a6a63c6d6f64d0ae9001096a54"
+  integrity sha512-sZefPTN+KLz70QlkqlIZiSrEuZZLONBAX+5u4zvfcNlEVpNUhLRKSX7vlVKEqUmKsCa6SJdRejZ1jyU8d3VkzA==
   dependencies:
-    "@electron-forge/maker-base" "6.0.0-beta.69"
-    "@electron-forge/shared-types" "6.0.0-beta.69"
+    "@electron-forge/maker-base" "6.0.0"
+    "@electron-forge/shared-types" "6.0.0"
   optionalDependencies:
     electron-installer-debian "^3.0.0"
 
@@ -186,6 +206,17 @@
   integrity sha512-Q+mikvdazgQV7/zHhAVgNVk8qCsgFoPT/pw1NzbFLI3u8e2gD9azuyb42DnU4a5cZniRg7P6Fk19aYzK4PYf6A==
   dependencies:
     "@electron-forge/shared-types" "6.0.0-beta.69"
+
+"@electron-forge/shared-types@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.0.tgz#43f847a6da5f15f037db207c9843d2e63f8eaff3"
+  integrity sha512-FN+158+EvSzbL/ZGwsLxeUbYOJm8bhHCLbR7SPAmKwn/X2P8pVj4HuhiROkqdiuU4kUDmrOg/LgObODofyvIKw==
+  dependencies:
+    "@electron-forge/async-ora" "6.0.0"
+    "@electron/rebuild" "^3.2.10"
+    electron-packager "^17.1.1"
+    listr2 "^5.0.3"
+    ora "^5.0.0"
 
 "@electron-forge/shared-types@6.0.0-beta.69":
   version "6.0.0-beta.69"
@@ -1779,6 +1810,31 @@ electron-packager@^17.1.0:
   version "17.1.0"
   resolved "https://registry.yarnpkg.com/electron-packager/-/electron-packager-17.1.0.tgz#e9653aa57dc523cdb3e0de7ec1a8e0112a1befec"
   integrity sha512-60TBoutfZuAcfJJL1IVWXDZnZ+Yn88HX3UhOLhHbdB/DKA8RAfwXUhSmsWWozh118gbqYRG/WEk9aDL1xVSMKQ==
+  dependencies:
+    "@electron/asar" "^3.2.1"
+    "@electron/get" "^2.0.0"
+    "@electron/notarize" "^1.2.3"
+    "@electron/osx-sign" "^1.0.1"
+    "@electron/universal" "^1.3.2"
+    cross-spawn-windows-exe "^1.2.0"
+    debug "^4.0.1"
+    extract-zip "^2.0.0"
+    filenamify "^4.1.0"
+    fs-extra "^10.1.0"
+    galactus "^0.2.1"
+    get-package-info "^1.0.0"
+    junk "^3.1.0"
+    parse-author "^2.0.0"
+    plist "^3.0.0"
+    rcedit "^3.0.1"
+    resolve "^1.1.6"
+    semver "^7.1.3"
+    yargs-parser "^21.1.1"
+
+electron-packager@^17.1.1:
+  version "17.1.1"
+  resolved "https://registry.yarnpkg.com/electron-packager/-/electron-packager-17.1.1.tgz#f156fc63d3a66f4e902e4b42992550a172982d59"
+  integrity sha512-r1NDtlajsq7gf2EXgjRfblCVPquvD2yeg+6XGErOKblvxOpDi0iulZLVhgYDP4AEF1P5/HgbX/vwjlkEv7PEIQ==
   dependencies:
     "@electron/asar" "^3.2.1"
     "@electron/get" "^2.0.0"
