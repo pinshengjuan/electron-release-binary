@@ -19,39 +19,7 @@
   },
   "license": "CC0-1.0",
   "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "ico/icons/win/icon.ico"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-wix",
-          "config": {
-            "name": "Release Binary",
-            "exe": "Release Binary",
-            "features": {
-              "autoUpdate": true,
-              "autoLaunch": true
-            },
-            "arch": "x64"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+    "forge": "./forge.config.js"
   },
   "devDependencies": {
     "@electron-forge/maker-deb": "^6.0.0",
