@@ -1,8 +1,0 @@
-<DirectoryRef Id="TARGETDIR">
-    <Component Id="RegistryInstallPath" Guid="76a03a85-d3b1-4ceb-8447-8b9e0b3ac626">
-        <RegistryKey Root="HKCR"
-                     Key="*\shell\Release Binary\command">
-            <RegistryValue Type="string" Value="C:\Program Files\Release Binary\Release Binary.exe" "%1" KeyPath="yes"/>
-        </RegistryKey>
-    </Component>
-</DirectoryRef>
