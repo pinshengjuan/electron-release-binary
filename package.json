@@ -35,6 +35,6 @@
     "electron-icon-maker": "^0.0.5",
     "electron-squirrel-startup": "^1.0.0",
     "electron-wix-msi": "^5.0.0",
-    "python-shell": "^2.0.3"
+    "python-shell": "^3.0.1"
   }
 }
