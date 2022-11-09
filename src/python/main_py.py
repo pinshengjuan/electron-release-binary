@@ -38,6 +38,7 @@ def main():
   is_email_global     = sys.argv[3]
   is_clipboard_global = sys.argv[4]
   project_path = ''
+  rom_file_name= ''
 
   # Get history Content
   print("Status_Anchor: Reading history contents")
@@ -49,22 +50,23 @@ def main():
 
   # Get rom file
   print("Status_Anchor: Getting ROM file name from History.txt")
-  rom_file_name = getRomFile(history_content).replace("\\", "/")
+  rom_file_name_with_folder = getRomFile(history_content).replace("\\", "/")
+  print("[python] rom file name with folder: " + rom_file_name_with_folder)
   # In case rom file is not in root path
-  if "/" in rom_file_name:
-    rom_file_name = rom_file_name.split("/")[-1]
-  print("[python] rom file name: " + rom_file_name)
+  rom_file_name = rom_file_name_with_folder.split("/")[-1]
+  print("[python] rom file name without folder: " + rom_file_name)
 
   # Get Project Path
   print("Status_Anchor: Getting Project root path")
   project_path = getProjectPath(history_path_global)
+  print("[python] Project path: " + project_path)
 
   # Get rom file path without rom name
-  rom_file_path = project_path + rom_file_name.replace(rom_file_name, "")
+  rom_file_path = project_path + rom_file_name_with_folder.replace(rom_file_name, '')
   print("[python] rom file path: " + rom_file_path)
 
   # Get rom file path with rom name
-  rom_file_full_path = project_path + rom_file_name
+  rom_file_full_path = rom_file_path + rom_file_name
   print("[python] rom file full path: " + rom_file_full_path)
 
   # Check rom file match History.txt
