@@ -113,6 +113,7 @@ if (btn) {
 
       // Turn Relaese Button style back
       setReleaseBtnBack();
+      setTextFieldEmpty();
 
       // Here we close this app
       if (!code) {
@@ -129,6 +130,10 @@ if (btn) {
       document.getElementById("release-button-id").removeAttribute("disabled");
       document.getElementById("release-button-id").style.backgroundColor =
         "#2196F3";
+    }
+    function setTextFieldEmpty() {
+      document.getElementById("history-path").innerHTML = "";
+      document.getElementById("rom-path").innerHTML = "";
     }
   });
 }
