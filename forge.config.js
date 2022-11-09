@@ -1,9 +1,6 @@
 module.exports = {
   packagerConfig: {
     icon: "ico/icons/win/icon.ico",
-    win32metadata: {
-      "requested-execution-level": "requireAdministrator",
-    },
   },
   makers: [
     {
