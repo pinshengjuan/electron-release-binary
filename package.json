@@ -30,7 +30,7 @@
     "electron": "^11.3.0"
   },
   "dependencies": {
-    "@electron-forge/cli": "^6.0.0",
+    "@electron-forge/cli": "^6.0.3",
     "electron-forge-maker-nsis": "^24.0.0-alpha.3",
     "electron-icon-maker": "^0.0.5",
     "electron-squirrel-startup": "^1.0.0",
