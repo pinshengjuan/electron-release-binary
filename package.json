@@ -1,7 +1,7 @@
 {
   "name": "electron-release-binary",
   "productName": "Release Binary",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Release Binary app",
   "main": "src/main.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
-  "repository": "",
+  "repository": "https://github.com/pinshengjuan/electron-release-binary",
   "keywords": [],
   "author": {
     "name": "PinShengJuan",

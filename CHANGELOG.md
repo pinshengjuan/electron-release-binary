@@ -1,6 +1,11 @@
 # Change Log
 
-## [0.0.2]
+## [0.0.4]
+
+- Fix project path recognized error when history filename not starts with "history"
+- Update node modules
+
+## [0.0.3]
 
 - Update node modules
 - Not serch binary in sub-folder for performance
