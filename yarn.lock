@@ -862,10 +862,10 @@ app-builder-bin@4.0.0:
   resolved "https://registry.yarnpkg.com/app-builder-bin/-/app-builder-bin-4.0.0.tgz#1df8e654bd1395e4a319d82545c98667d7eed2f0"
   integrity sha512-xwdG0FJPQMe0M0UA4Tz0zEB8rBJTRA5a476ZawAqiBkMv16GRK5xpXThOjMaEOFnZ6zabejjG4J3da0SXG63KA==
 
-app-builder-lib@24.0.0-alpha.3:
-  version "24.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/app-builder-lib/-/app-builder-lib-24.0.0-alpha.3.tgz#bfffe7dc7561482e59db4f7e036b068f010d9a53"
-  integrity sha512-rsK9+j5dUWzovQPSW2kd7XX7CvOTXaWZaq9KxeG6Wy6XKhcVsfeRHgRrG3R+bLeOmCaDdaWwtqaFGghhdohbtg==
+app-builder-lib@24.0.0-alpha.5:
+  version "24.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/app-builder-lib/-/app-builder-lib-24.0.0-alpha.5.tgz#2615dcc87458d25543b4a95a933a8e15b6a6a4ac"
+  integrity sha512-UOZwShLvSmPkQvS8Lf5Swn1RSN6/N39ug8K9P2xVx+1iN3Vjv8kSj8WBVHoISLILZnr2/eWBAo4QsrVgm1ab8w==
   dependencies:
     "7zip-bin" "~5.1.1"
     "@develar/schema-utils" "~2.6.5"
@@ -879,7 +879,7 @@ app-builder-lib@24.0.0-alpha.3:
     debug "^4.3.4"
     ejs "^3.1.8"
     electron-osx-sign "^0.6.0"
-    electron-publish "24.0.0-alpha.3"
+    electron-publish "24.0.0-alpha.4"
     electron-rebuild "^3.2.9"
     form-data "^4.0.0"
     fs-extra "^10.1.0"
@@ -1625,12 +1625,12 @@ ejs@^3.1.8:
   dependencies:
     jake "^10.8.5"
 
-electron-forge-maker-nsis@^24.0.0-alpha.3:
-  version "24.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/electron-forge-maker-nsis/-/electron-forge-maker-nsis-24.0.0-alpha.3.tgz#41b0a5affac71a9954adf57519b004f4ca32e624"
-  integrity sha512-3V1KFkUTL+g7zFGC7oYUOs499Y9I5XaULwmN2/LBeUNWhKJsDm6ljOzT7rd6SLKOhWEe5AA+uke/gvFiZ5XYtg==
+electron-forge-maker-nsis@^24.0.0-alpha.5:
+  version "24.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/electron-forge-maker-nsis/-/electron-forge-maker-nsis-24.0.0-alpha.5.tgz#444655812de6c4b20c1c0a4abd21f948b939a104"
+  integrity sha512-a2Ux1TVSj2GNhtSmRBrZonK3VDf0nU0krgy/B1Y5NdXK1/oC0dLptMYocxjkqoyrtiopeSCOc4xzRAXYBWOCMA==
   dependencies:
-    app-builder-lib "24.0.0-alpha.3"
+    app-builder-lib "24.0.0-alpha.5"
 
 electron-icon-maker@^0.0.5:
   version "0.0.5"
@@ -1722,10 +1722,10 @@ electron-packager@^17.1.1:
     semver "^7.1.3"
     yargs-parser "^21.1.1"
 
-electron-publish@24.0.0-alpha.3:
-  version "24.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/electron-publish/-/electron-publish-24.0.0-alpha.3.tgz#c303726f7695cc138a7edd3213ab758a22084d27"
-  integrity sha512-t/omq93IxnOuLlf1Grw7xizgP/DNoBQ9GTfRSzCbRfFrQPadz0G81fpCPb1vgmVVmsHsCw+ERx8T8DxCrQak+w==
+electron-publish@24.0.0-alpha.4:
+  version "24.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/electron-publish/-/electron-publish-24.0.0-alpha.4.tgz#e2e22d2bf85597d4a96775fc4db31f0884b43e75"
+  integrity sha512-HI0Hb5m6zfxnDZa/tLR7hHuEuXEsvEWkK7euqLODl6mJujxAtCgrZ7m1Pp5R8sDRZtV1m8IIfD3/XRthUp3pDQ==
   dependencies:
     "@types/fs-extra" "^9.0.11"
     builder-util "24.0.0-alpha.3"
