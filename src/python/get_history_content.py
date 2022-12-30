@@ -1,3 +1,5 @@
+import global_var as glb
+
 def getHistoryContent(history_path):
   history_lines = open(history_path, 'r', encoding= 'utf8').readlines()
   history_length = len(history_lines)-1
@@ -11,4 +13,8 @@ def getHistoryContent(history_path):
           history_content += capture_line
           history_content += '\n'
           return history_content
-  return ""
+  return ''
+
+def setContentToGlobal():
+  history_path = glb.get('history_path')
+  glb.set('history_content', getHistoryContent(history_path))

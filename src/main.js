@@ -11,7 +11,7 @@ function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 760,
-    height: 550,
+    height: 650,
     icon: __dirname + "../ico/titleicon.png",
     webPreferences: {
       nodeIntegration: true,

@@ -1,18 +1,25 @@
 import win32com.client as win32
 from datetime import date
+import global_var as glb
+import project_info as _ProjectInfo
 
-def openOutlook(history_content, project_name):
+def openOutlook(html_history_content):
 
   obj = win32.Dispatch('outlook.application')
   mapi = obj.GetNamespace('MAPI')
-  newMail = obj.CreateItem(0)
-  newMail.GetInspector
+  new_mail = obj.CreateItem(0)
+  new_mail.GetInspector
+
+  ProjInfo = _ProjectInfo.ProjectInfo()
 
   # Edit the Subject
-  newMail.Subject = "{:%Y-%b-%d} Binary Release: ".format(date.today()) + project_name
+  if(glb.get('production') == 'true'):
+    new_mail.Subject = '[Verify] '+ProjInfo.projectName()+' '+ProjInfo.projectVersion()
+  else:
+    new_mail.Subject = '{:%Y-%b-%d} [Release] '.format(date.today()) + ProjInfo.projectName()
 
   # Get the Contents
-  newMail.HtmlBody = history_content
+  new_mail.HtmlBody = html_history_content
 
   # Display the email
-  newMail.Display(True)
+  new_mail.Display(True)

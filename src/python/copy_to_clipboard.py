@@ -292,7 +292,6 @@ def DumpHtml():
         # print("GetSource()=>>>%s<<<END" % cb.GetSource())
 
 
-# if __name__ == '__main__':
 def copyToClipboard(history_content):
 
     PutHtml(history_content)

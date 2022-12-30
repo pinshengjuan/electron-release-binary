@@ -109,7 +109,7 @@
   height: 0;
 }
 
-/* The slider */
+/* 畫出橢圓外框, 先畫出方形 */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -121,7 +121,12 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
+/* 將方形外框變橢圓 */
+.slider.round {
+  border-radius: 34px;
+}
 
+/* 畫出toggle的圓球, 先畫出方形 */
 .slider:before {
   position: absolute;
   content: "";
@@ -133,26 +138,26 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
+/* 將方形變圓球 */
+.slider.round:before {
+  border-radius: 50%;
+}
 
+/* 當按下後變色 */
 input:checked + .slider {
   background-color: #2196F3;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
+/* 製造圓球滑動效果 */
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+/*
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
 }
+*/
 
-.slider.round:before {
-  border-radius: 50%;
-}

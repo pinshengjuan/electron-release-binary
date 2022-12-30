@@ -41,6 +41,30 @@ folderBtn.addEventListener("click", (event) => {
     });
 });
 
+// Set email greyout if Production selected
+const productionBtn = document.querySelector(".production-class");
+productionBtn.addEventListener("click", (event) => {
+  if (document.querySelector("#isProduction").checked == true) {
+    document.getElementById("isEmail").setAttribute("disabled", true);
+    document.getElementById("isSpanEmail").style.backgroundColor = "#848884";
+    document.querySelector("#isEmail").checked = true;
+  } else {
+    let email = document.getElementById("isEmail");
+    email.removeAttribute("disabled");
+    document.getElementById("isSpanEmail").style.backgroundColor = "#2196F3";
+  }
+});
+
+// Set email button color, it's a patch because of Production button
+const emailBtn = document.querySelector(".email-class");
+emailBtn.addEventListener("click", (event) => {
+  if (document.querySelector("#isEmail").checked == true) {
+    document.getElementById("isSpanEmail").style.backgroundColor = "#2196F3";
+  } else {
+    document.getElementById("isSpanEmail").style.backgroundColor = "#ccc";
+  }
+});
+
 // Send data to python and close window
 const btn = document.querySelector(".release-btn-class");
 if (btn) {
@@ -57,6 +81,9 @@ if (btn) {
     var isEmail = document.querySelector("#isEmail").checked.toString();
     var isClipboard = document.querySelector("#isClipboard").checked.toString();
     var isClose = document.querySelector("#isClose").checked.toString();
+    var isProduction = document
+      .querySelector("#isProduction")
+      .checked.toString();
 
     // Can check log by toggling devMode via Ctrl+Shift+I
     console.log("[javascript] history Path: " + historyPath);
@@ -64,10 +91,11 @@ if (btn) {
     console.log("[javascript] isEmail: " + isEmail);
     console.log("[javascript] isClipboard: " + isClipboard);
     console.log("[javascript] isClose: " + isClose);
+    console.log("[javascript] isProduction: " + isProduction);
 
     var python = require("child_process").spawn(
       "resources\\app\\dist\\main_py.exe",
-      [historyPath, romPath, isEmail, isClipboard]
+      [historyPath, romPath, isEmail, isClipboard, isProduction]
     );
 
     python.stdout.on("data", function (data) {
