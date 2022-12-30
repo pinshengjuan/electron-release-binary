@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.5]
+
+- python code refactoring
+- Add Production option
+
 ## [0.0.4]
 
 - Fix project path recognized error when history filename not starts with "history"
