@@ -96,12 +96,12 @@
     username "^5.1.0"
     yarn-or-npm "^3.0.1"
 
-"@electron-forge/maker-base@^6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.3.tgz#867e17eb68977a682b5d8938a04f6e0f23b39b53"
-  integrity sha512-VVuRSlUpyoUviqY9Rs4pdClYbdNjb9ELzO9xbyNQ07GUdwz7HBG/Rj5qTYKmFtlWzeMsiepLDO+JOz1EbVs15Q==
+"@electron-forge/maker-base@6.0.5", "@electron-forge/maker-base@^6.0.3":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.5.tgz#09dc0f458ca1d15ce93be9210ea44e01dca911cb"
+  integrity sha512-m3xS/Gd2XlYUjXO4o8bxZEcwN9AulMDjuIzq68FRH5VB1vuESJKtVZjSa331IjaA+0aRXbSCa108FLy8g5Qlaw==
   dependencies:
-    "@electron-forge/shared-types" "^6.0.3"
+    "@electron-forge/shared-types" "6.0.5"
     fs-extra "^10.0.0"
     which "^2.0.2"
 
@@ -136,13 +136,13 @@
   optionalDependencies:
     electron-winstaller "^5.0.0"
 
-"@electron-forge/maker-wix@^6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-wix/-/maker-wix-6.0.3.tgz#e981e09528ef78ef0a8dec8f6497b86869adf524"
-  integrity sha512-iSbCrNg4mB+tPbW3ITjbDIlfiF71k26EGWc4wNfDTSasQvz7Bu9Qe+idhGq7SBx52AGPPi/J/MqmIWDr9QT7Kw==
+"@electron-forge/maker-wix@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-wix/-/maker-wix-6.0.5.tgz#956fa91c209122a8cbd6adcd4300564dfda8f35f"
+  integrity sha512-c22srs2DdYdbrwQUeYyDfZ+r+Gf5jUBPQ03Rzr14kOWzvnS6zFfeFf0rhKOmLJ+sDyGlJXyYMjhN1w1VETiYsg==
   dependencies:
-    "@electron-forge/maker-base" "^6.0.3"
-    "@electron-forge/shared-types" "^6.0.3"
+    "@electron-forge/maker-base" "6.0.5"
+    "@electron-forge/shared-types" "6.0.5"
     chalk "^4.0.0"
     electron-wix-msi "^5.0.0"
     log-symbols "^4.0.0"
@@ -172,10 +172,10 @@
   dependencies:
     "@electron-forge/shared-types" "^6.0.3"
 
-"@electron-forge/shared-types@^6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.3.tgz#54ac9e1f80afa8ee609d104611c05c0ddee53cb2"
-  integrity sha512-KHY3W1GrXN6jcvRJu4S8EWVAEtJ3FVugOlG37QiEkh8WV8VxxKRB2Z5IR6RDZ6pu4ijCM+/9uVmrNCCjBRPXqg==
+"@electron-forge/shared-types@6.0.5", "@electron-forge/shared-types@^6.0.3":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.5.tgz#8b265687fad188799384f88fba821f8f0eac689e"
+  integrity sha512-FrJI11afw/Cxk0JwgWyKg9aPoHOdmMi4JHTY6pnmi95MjarQ1d0SIqKJUzX7q2lXPUAxqPKA2Wmykg6F2CThlg==
   dependencies:
     "@electron/rebuild" "^3.2.10"
     electron-packager "^17.1.1"
