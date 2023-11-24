@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.0.6]
+
+- long file path in nerwline.
+- font of outlook body turn to use Consolas.
+- Fix html multiple spaces fold in one.
+- String handling turn to use regular expression.
+
 ## [0.0.5]
 
 - python code refactoring
