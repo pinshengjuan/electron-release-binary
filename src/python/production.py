@@ -1,4 +1,5 @@
 import os
+import re
 import zipfile
 import global_var as glb
 import project_info as _ProjectInfo
@@ -23,7 +24,9 @@ class ProductionBinary:
 
   def packName(self): #MyAwesomeProject(1.0.0)ROM.zip
     ProjInfo = _ProjectInfo.ProjectInfo()
-    return ProjInfo.projectName()+'('+ProjInfo.projectVersion()+')'+'ROM.zip'
+    #modify project name with "\" and "/" to "_" using RegEx
+    modfied_project_name = re.sub(r"[\\\/]", "_", ProjInfo.projectName())
+    return modfied_project_name+'('+ProjInfo.projectVersion()+')'+'ROM.zip'
 
   def checkProductionFolder(self): #Check Production folder exist, if not, make one
     if not os.path.isdir(self.productionPath()):
