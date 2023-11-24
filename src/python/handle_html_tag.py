@@ -8,7 +8,7 @@ class HandleHtml:
     return mail_body
 
   def handleDearAll(self):
-    dear_all = "<font size =3 face = 'Calibri'>" + "Dear All,\n\n" + "</font>" + "<br><br>"
+    dear_all = "<font size =3 face = 'Consolas'>" + "Dear All,\n\n" + "</font>" + "<br><br>"
     return dear_all
 
   def handleFileHyperlink(self):
@@ -17,7 +17,7 @@ class HandleHtml:
       link = glb.get('server_path')+'Production/'+ProjInfo.projectVersion()+'\n'
     else:
       link = glb.get('server_path')+ProjInfo.romFileWithoutFolder()+'\n'
-    file_hyper_link = "<font size =3 face = 'Calibri'>"+"<a href=" + "file:///" + link.replace('/', '\\').replace(' ', '%20') + ">" + link.replace('/', '\\') + "</a>" + "</font>" + "<br><br>"
+    file_hyper_link = "<font size =3 face = 'Consolas'>"+"<a href=" + "file:///" + link.replace('/', '\\').replace(' ', '%20') + ">" + link.replace('/', '\\') + "</a>" + "</font>" + "<br><br>"
     return file_hyper_link
 
   def handleContent(self, history_content):
@@ -26,5 +26,5 @@ class HandleHtml:
       if line.strip() == '':
         new_history_content += "<br>"
       else:
-        new_history_content += "<font size =3 face = 'Calibri'>" + line + "</font>" + "<br>"
+        new_history_content += "<font size =3 face = 'Consolas'>" + line + "</font>" + "<br>"
     return new_history_content
