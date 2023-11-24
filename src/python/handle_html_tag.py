@@ -26,5 +26,5 @@ class HandleHtml:
       if line.strip() == '':
         new_history_content += "<br>"
       else:
-        new_history_content += "<font size =3 face = 'Consolas'>" + line + "</font>" + "<br>"
+        new_history_content += "<font size =3 face = 'Consolas'>" + line.replace(" ", "&nbsp;") + "</font>" + "<br>"
     return new_history_content
